@@ -1,0 +1,16 @@
+PODS:
+  - SFRemoteImage (0.0.1)
+
+DEPENDENCIES:
+  - SFRemoteImage (from `/Users/mymac/Desktop/OpenSource/SFRemoteImage`)
+
+EXTERNAL SOURCES:
+  SFRemoteImage:
+    :path: "/Users/mymac/Desktop/OpenSource/SFRemoteImage"
+
+SPEC CHECKSUMS:
+  SFRemoteImage: 6fc42e23461e204be15fb007897286a06aaa1ee3
+
+PODFILE CHECKSUM: b890c10d4cf0c06817feb9e2d90d798e6a9bd870
+
+COCOAPODS: 1.11.2

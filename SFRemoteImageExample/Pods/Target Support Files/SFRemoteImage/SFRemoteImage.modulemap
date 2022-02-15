@@ -1,0 +1,6 @@
+framework module SFRemoteImage {
+  umbrella header "SFRemoteImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

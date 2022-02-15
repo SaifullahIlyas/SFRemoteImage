@@ -1,0 +1,25 @@
+{
+  "name": "SFRemoteImage",
+  "version": "0.0.1",
+  "summary": "Side Menu to handle multiple options in app i.e Android Navigation Drawer",
+  "description": "SFRemoteImage  is thread safe  memory base  chached remote image downloader  library built on top of NsoperationQueue to optimize app performance ,scrolling and reduce bettery consumption .",
+  "homepage": "https://github.com/SaifullahIlyas/SFRemoteImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "": "saifullahilyas907@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/SaifullahIlyas/SFRemoteImage.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "SFRemoteImage/SFRemoteImage/Source/*.{swift}",
+  "exclude_files": "Classes/Exclude",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}
