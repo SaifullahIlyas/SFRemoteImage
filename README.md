@@ -80,7 +80,12 @@ var loaderToShow : UIActivityIndicatorView  {
    }
    
    ```
-   
+# Contribution Guide 
+- Fork it
+- Create your feature/bugfix  branch (git checkout -b feature-fname || git checkout -b bugfix-bname )
+- Commit your changes (git commit -a 'message explaining the task . your addition overview')
+- Push to the branch (git push origin your-branch-name)
+- Open pull request by explaining what was the issue, what was your finding. what  action was taken by you and finally how did it improves the performance.
   
 
 
