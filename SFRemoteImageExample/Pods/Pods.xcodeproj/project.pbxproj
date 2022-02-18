@@ -10,7 +10,7 @@
 		0374B13E0A963FE62F9DD774A1E43AEA /* SFRemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BBA8BC70A08CC96124F552C078AC8D /* SFRemoteImage.swift */; };
 		14FE3B2969207E12F2AACD45BC86B203 /* Pods-SFRemoteImageExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5AFAB18D781848D339876C25568767 /* Pods-SFRemoteImageExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		157B9C7FAACB756FC0E9E0E8B09E08B2 /* Pods-SFRemoteImageExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E12A4CBF3BF7597222C1CA706A7C1F53 /* Pods-SFRemoteImageExample-dummy.m */; };
-		34859D684B5117FE2A1FFBAD5E99F5BF /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C16DBEACD50EBA63C87347DB9397A0 /* Test.swift */; };
+		1F8E681127C012D100754AA0 /* SFRemoteImage+Protoco-GCDWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E681027C012D100754AA0 /* SFRemoteImage+Protoco-GCDWrapper.swift */; };
 		4985040592421D77D7537D2294C30BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4BEF4A6D445A8BAE3B59FE6E156D728D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		571AB3AA4F77AEE0458A742C6B796228 /* SFRemoteImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ABED1B12C2DFDB0F637B62957933328 /* SFRemoteImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,12 +32,12 @@
 /* Begin PBXFileReference section */
 		0325BF0B97EEE2494E5C05C2D3615302 /* Pods-SFRemoteImageExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFRemoteImageExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		088E054D8C46F9961C38E07BF5E5E1D9 /* SFRemoteImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SFRemoteImage.debug.xcconfig; sourceTree = "<group>"; };
-		1CC883A7121EDD8D47BAB0EB7BB588DA /* SFRemoteImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SFRemoteImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1CC883A7121EDD8D47BAB0EB7BB588DA /* SFRemoteImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SFRemoteImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F8E681027C012D100754AA0 /* SFRemoteImage+Protoco-GCDWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFRemoteImage+Protoco-GCDWrapper.swift"; sourceTree = "<group>"; };
 		2EE21B4FD6362211EFCFA0317A483B5E /* Pods-SFRemoteImageExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFRemoteImageExample.modulemap"; sourceTree = "<group>"; };
 		344E236A15F9367388268FA3209A39AB /* Pods-SFRemoteImageExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SFRemoteImageExample"; path = Pods_SFRemoteImageExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A88DD08C4542E0276CA06198DF7439 /* SFRemoteImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFRemoteImage-prefix.pch"; sourceTree = "<group>"; };
 		3C912367D8423CDF87121248EF8603B5 /* Pods-SFRemoteImageExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFRemoteImageExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		43C16DBEACD50EBA63C87347DB9397A0 /* Test.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Test.swift; path = SFRemoteImage/SFRemoteImage/Source/Test.swift; sourceTree = "<group>"; };
 		46D4DAF5B026DBC0FBECE79C265CBA82 /* Pods-SFRemoteImageExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFRemoteImageExample-Info.plist"; sourceTree = "<group>"; };
 		5ABED1B12C2DFDB0F637B62957933328 /* SFRemoteImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SFRemoteImage-umbrella.h"; sourceTree = "<group>"; };
 		619B5758189E911EC33C84F250B33A34 /* SFRemoteImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFRemoteImage-Info.plist"; sourceTree = "<group>"; };
@@ -49,14 +49,14 @@
 		93435043879A5D10496293214478514A /* Pods-SFRemoteImageExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFRemoteImageExample.debug.xcconfig"; sourceTree = "<group>"; };
 		98BA54463026A01E94A19AD1DFDEDB94 /* SFRemoteImage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SFRemoteImage; path = SFRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BBA8BC70A08CC96124F552C078AC8D /* SFRemoteImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFRemoteImage.swift; path = SFRemoteImage/SFRemoteImage/Source/SFRemoteImage.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A578031C2C12D5672660EA69CA353A81 /* DowLoadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DowLoadOperation.swift; path = SFRemoteImage/SFRemoteImage/Source/DowLoadOperation.swift; sourceTree = "<group>"; };
 		A7B5846D026713F299B828A44E50BFE8 /* Pods-SFRemoteImageExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFRemoteImageExample-frameworks.sh"; sourceTree = "<group>"; };
-		AE816C46F94BCB370359FFB6692169C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AE816C46F94BCB370359FFB6692169C2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D20BCDD39438E89028B0326F1CD9FB45 /* SFRemoteImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFRemoteImage.modulemap; sourceTree = "<group>"; };
 		D9BDD3C4DF84953D089B93D5CCF159DA /* SFRemoteImage+Exposeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFRemoteImage+Exposeable.swift"; path = "SFRemoteImage/SFRemoteImage/Source/SFRemoteImage+Exposeable.swift"; sourceTree = "<group>"; };
 		E12A4CBF3BF7597222C1CA706A7C1F53 /* Pods-SFRemoteImageExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SFRemoteImageExample-dummy.m"; sourceTree = "<group>"; };
-		FDE7BA8D3214E55D593870B6FC87B09B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		FDE7BA8D3214E55D593870B6FC87B09B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 				A578031C2C12D5672660EA69CA353A81 /* DowLoadOperation.swift */,
 				98BBA8BC70A08CC96124F552C078AC8D /* SFRemoteImage.swift */,
 				D9BDD3C4DF84953D089B93D5CCF159DA /* SFRemoteImage+Exposeable.swift */,
-				43C16DBEACD50EBA63C87347DB9397A0 /* Test.swift */,
+				1F8E681027C012D100754AA0 /* SFRemoteImage+Protoco-GCDWrapper.swift */,
 				C749D8F28BBE51F5EE100CF26C8A0F97 /* Pod */,
 				0E5BEAC217BAC83386A28CE445F2F622 /* Support Files */,
 			);
@@ -296,11 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8E681127C012D100754AA0 /* SFRemoteImage+Protoco-GCDWrapper.swift in Sources */,
 				CBDE06AC7AF821123D8C095A4F54E2BE /* DowLoadOperation.swift in Sources */,
 				0374B13E0A963FE62F9DD774A1E43AEA /* SFRemoteImage.swift in Sources */,
 				D25EDEADC8FDDA4A1C548B9DDF93136D /* SFRemoteImage+Exposeable.swift in Sources */,
 				F6078BA65485CD3B757B9D2CB9CF7984 /* SFRemoteImage-dummy.m in Sources */,
-				34859D684B5117FE2A1FFBAD5E99F5BF /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,8 +20,9 @@ protocol NeedsOperationQueue {
 extension NeedsOperationQueue{
     func defaulOptQueue()->OperationQueue {
         let queue : OperationQueue = OperationQueue()
-        queue.name = "module.name.opqueue"
+        queue.name = "com.sfremoteimage.opqueue"
         queue.qualityOfService = .userInteractive
+        queue.maxConcurrentOperationCount = 4
         return queue
     }
     func optQueue(withIdentifier idf : String)->OperationQueue {
@@ -32,7 +33,7 @@ extension NeedsOperationQueue{
     }
 }
 
-final public class SFRemoteImage : NSObject,NeedsOperationQueue {
+final public class SFRemoteImage : NSObject,NeedsOperationQueue,GCDWrapper{
     
     private lazy var tQueue  = defaulOptQueue()
     private let internalQueue = DispatchQueue(label: "com.imagedownloaderinternal.queue",
