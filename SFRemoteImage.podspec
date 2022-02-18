@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SFRemoteImage"
-  spec.version      = "0.0.1"
-  spec.summary      = "Side Menu to handle multiple options in app i.e Android Navigation Drawer"
+  spec.version      = "1.0.0"
+  spec.summary      = "SFRemoteImage is a lightweight thread-safe image downloading and caching library built on the top of NSOperationQueue."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
