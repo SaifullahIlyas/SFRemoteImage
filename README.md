@@ -9,7 +9,7 @@ SFRemoteImage is available through cocoapods and swift package manager.
 ## Cocoapods
 - Add to podfile 
 ``` 
- pod 'SFRemoteImage'
+pod 'SFRemoteImage', :git => 'https://github.com/SaifullahIlyas/SFRemoteImage.git'
  
  ```
  - Install  by running  
