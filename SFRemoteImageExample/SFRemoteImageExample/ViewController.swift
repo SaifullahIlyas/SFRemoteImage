@@ -22,7 +22,10 @@ class ViewController: UIViewController {
 //    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        SFRemoteImage.image(fromURL: "https://media.istockphoto.com/photos/new-luxury-residential-towers-construction-on-the-waterfront-of-east-picture-id1304037325"){image, data in 
+        SFRemoteImage.image(fromURL: "https://media.istockphoto.com/photos/new-luxury-residential-towers-construction-on-the-waterfront-of-east-picture-id1304037325"){image, data in
+            DispatchQueue.main.async {
+                self.imageView.image = image
+            }
             
         }
       //  self.imageView.image(fromURL: url, andPlaceHolderImage: placeHolder,shouldShowProgress : true)
