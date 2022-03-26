@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SFRemoteImage"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "SFRemoteImage is a lightweight thread-safe image downloading and caching library built on the top of NSOperationQueue."
 
   # This description is used to generate tags and improve search results.
