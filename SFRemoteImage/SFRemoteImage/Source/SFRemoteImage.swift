@@ -33,7 +33,7 @@ extension NeedsOperationQueue{
     }
 }
 
-final public class SFRemoteImage : NSObject,NeedsOperationQueue,GCDWrapper{
+final public class SFRemoteImage : NSObject,NeedsOperationQueue,GCDWrapper,SFFileManageable{
     
     private lazy var tQueue  = defaulOptQueue()
     private let internalQueue = DispatchQueue(label: "com.imagedownloaderinternal.queue",
@@ -56,42 +56,54 @@ final public class SFRemoteImage : NSObject,NeedsOperationQueue,GCDWrapper{
         //return image from cache if already downloaded
         if let cachedData = self.cache.object(forKey: url as NSString){
             completion?(UIImage(data: cachedData as Data),cachedData as Data)
+            tryRefreshData(at: url, completion: completion)
         }
+         //check if image is in diskstorage
+         else if let diskData = self.getFileData(withkey: url) {
+             completion?(UIImage(data: diskData ),diskData)
+             tryRefreshData(at: url, completion: completion)
+         }
         else
         {
-            //check already running operation
-            if let operation = self.getOperationAtURL(url: url), let blocks = self.getBlocks(atURL: url){
-                operation.queuePriority = .high
-                
-                self.updateBlocks(atURL: url, andBlocks: blocks + [completion])
-            }
-            // define new task 
-            else
-            {
-                let operation = DownLoadOperation(url: url,state: .waitingToDownload)
-                tQueue.addOperation(operation)
-                operation.imageForOperation = {image,data in
-                                               if let data = data {
-                                                self.cache.setObject(data as NSData , forKey: operation.url as NSString)
-                                                                   }
-                    guard let blocks = self.getBlocks(atURL: url) else {return}
-                    for block in blocks {
-                        block?(image,data)
-                    }
-                    self.removeBlocks(atURL: url)
-                    self.removeOperations(atURL: url)
-                    
-                }
-                self.updateOperationAtURL(url: url, operation: operation)
-                self.updateBlocks(atURL: url, andBlocks:  [completion])
-                
-                
-           }
+            tryRefreshData(at: url, completion: completion)
+            
+            
         }
         
         
     }
     
+    private func tryRefreshData(at url : String,completion :onImageResult) {
+        //check already running operation
+        if let operation = self.getOperationAtURL(url: url), let blocks = self.getBlocks(atURL: url){
+            operation.queuePriority = .high
+            
+            self.updateBlocks(atURL: url, andBlocks: blocks + [completion])
+        }
+        // define new task
+        else
+        {
+            let operation = DownLoadOperation(url: url,state: .waitingToDownload)
+            tQueue.addOperation(operation)
+            operation.imageForOperation = {image,data in
+                                           if let data = data {
+                                            self.cache.setObject(data as NSData , forKey: operation.url as NSString)
+                                                               }
+                guard let blocks = self.getBlocks(atURL: url) else {return}
+                for block in blocks {
+                    block?(image,data)
+                }
+                self.removeBlocks(atURL: url)
+                self.removeOperations(atURL: url)
+                
+            }
+            self.updateOperationAtURL(url: url, operation: operation)
+            self.updateBlocks(atURL: url, andBlocks:  [completion])
+            
+            
+       }
+        
+    }
     
     /*Thread Safe operations*/
     private func removeOperations(atURL url : String) {

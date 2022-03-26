@@ -10,6 +10,7 @@
 		13ACA4CCC0F02A186A96F89BD975A1CA /* SFRemoteImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B86D5556BF75FE029267597BE394638 /* SFRemoteImage-dummy.m */; };
 		14FE3B2969207E12F2AACD45BC86B203 /* Pods-SFRemoteImageExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B5AFAB18D781848D339876C25568767 /* Pods-SFRemoteImageExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		157B9C7FAACB756FC0E9E0E8B09E08B2 /* Pods-SFRemoteImageExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E12A4CBF3BF7597222C1CA706A7C1F53 /* Pods-SFRemoteImageExample-dummy.m */; };
+		1F6DB44E27EF8E7900BC701A /* SFRemoteImage-FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DB44D27EF8E7900BC701A /* SFRemoteImage-FileManager.swift */; };
 		440971DE1B5BE1D4F926EE96F4DD7C63 /* SFRemoteImage+Exposeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68B7EF2303BD637D61A9BE64EC5BBB4 /* SFRemoteImage+Exposeable.swift */; };
 		4985040592421D77D7537D2294C30BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4BEF4A6D445A8BAE3B59FE6E156D728D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -31,13 +32,14 @@
 
 /* Begin PBXFileReference section */
 		0325BF0B97EEE2494E5C05C2D3615302 /* Pods-SFRemoteImageExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SFRemoteImageExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		063B60A43A0AA4AEACB804B2D5A84528 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		063B60A43A0AA4AEACB804B2D5A84528 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1EDD86247CCBF107B8847BF40A42A278 /* SFRemoteImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SFRemoteImage-Info.plist"; sourceTree = "<group>"; };
+		1F6DB44D27EF8E7900BC701A /* SFRemoteImage-FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFRemoteImage-FileManager.swift"; sourceTree = "<group>"; };
 		2EE21B4FD6362211EFCFA0317A483B5E /* Pods-SFRemoteImageExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SFRemoteImageExample.modulemap"; sourceTree = "<group>"; };
 		344E236A15F9367388268FA3209A39AB /* Pods-SFRemoteImageExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SFRemoteImageExample"; path = Pods_SFRemoteImageExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A58BB487AD51D9F3B7267C0330C0787 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3A58BB487AD51D9F3B7267C0330C0787 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3C912367D8423CDF87121248EF8603B5 /* Pods-SFRemoteImageExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFRemoteImageExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		4566ACB8670705C3C1F7BD83040AA537 /* SFRemoteImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SFRemoteImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4566ACB8670705C3C1F7BD83040AA537 /* SFRemoteImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SFRemoteImage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46D4DAF5B026DBC0FBECE79C265CBA82 /* Pods-SFRemoteImageExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SFRemoteImageExample-Info.plist"; sourceTree = "<group>"; };
 		6BC68CD0E5C619B714460F4A83117757 /* Pods-SFRemoteImageExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SFRemoteImageExample.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -48,7 +50,7 @@
 		98BA54463026A01E94A19AD1DFDEDB94 /* SFRemoteImage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SFRemoteImage; path = SFRemoteImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B86D5556BF75FE029267597BE394638 /* SFRemoteImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SFRemoteImage-dummy.m"; sourceTree = "<group>"; };
 		9BCD9AFC1793880CF8B0B3452A8736CB /* SFRemoteImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SFRemoteImage.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A251A3406D244986ACB9D50E86B556BA /* SFRemoteImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SFRemoteImage.swift; path = SFRemoteImage/SFRemoteImage/Source/SFRemoteImage.swift; sourceTree = "<group>"; };
 		A7B5846D026713F299B828A44E50BFE8 /* Pods-SFRemoteImageExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SFRemoteImageExample-frameworks.sh"; sourceTree = "<group>"; };
 		B68B7EF2303BD637D61A9BE64EC5BBB4 /* SFRemoteImage+Exposeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SFRemoteImage+Exposeable.swift"; path = "SFRemoteImage/SFRemoteImage/Source/SFRemoteImage+Exposeable.swift"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				A251A3406D244986ACB9D50E86B556BA /* SFRemoteImage.swift */,
 				B68B7EF2303BD637D61A9BE64EC5BBB4 /* SFRemoteImage+Exposeable.swift */,
 				7714331A266EBDEB4A895C9F0923E518 /* SFRemoteImage+Protoco-GCDWrapper.swift */,
+				1F6DB44D27EF8E7900BC701A /* SFRemoteImage-FileManager.swift */,
 				A921C4B1550A15ED9C92077EA1413958 /* Pod */,
 				9C9D34B8E37FEFACF3CEB38F366E91F9 /* Support Files */,
 			);
@@ -306,6 +309,7 @@
 			files = (
 				D991D01BC30EDC7193293332360C8C9B /* DowLoadOperation.swift in Sources */,
 				BC98E7FD665A2E0F8185B8F2194D6B32 /* SFRemoteImage.swift in Sources */,
+				1F6DB44E27EF8E7900BC701A /* SFRemoteImage-FileManager.swift in Sources */,
 				440971DE1B5BE1D4F926EE96F4DD7C63 /* SFRemoteImage+Exposeable.swift in Sources */,
 				F370B1522D3CE26A90499F4E8CE0BDC2 /* SFRemoteImage+Protoco-GCDWrapper.swift in Sources */,
 				13ACA4CCC0F02A186A96F89BD975A1CA /* SFRemoteImage-dummy.m in Sources */,
