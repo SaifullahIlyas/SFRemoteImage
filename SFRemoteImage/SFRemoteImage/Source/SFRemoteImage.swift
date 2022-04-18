@@ -61,6 +61,7 @@ final public class SFRemoteImage : NSObject,NeedsOperationQueue,GCDWrapper,SFFil
          //check if image is in diskstorage
          else if let diskData = self.getFileData(withkey: url) {
              completion?(UIImage(data: diskData ),diskData)
+             self.cache.setObject(diskData as NSData , forKey: url as NSString)
              tryRefreshData(at: url, completion: completion)
          }
         else
