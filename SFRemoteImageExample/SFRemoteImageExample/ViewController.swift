@@ -22,11 +22,13 @@ class ViewController: UIViewController {
 //    }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        SFRemoteImage.image(fromURL: "https://media.istockphoto.com/photos/new-luxury-residential-towers-construction-on-the-waterfront-of-east-picture-id1304037325"){image, data in
+        let url = "https://images.unsplash.com/photo-1635861194887-c96c43a89358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
+      //  self.imageView.image(fromURL: url, andPlaceHolderImage: nil)
+        SFRemoteImage.image(fromURL: url){image, data in
             DispatchQueue.main.async {
                 self.imageView.image = image
             }
-            
+
         }
       //  self.imageView.image(fromURL: url, andPlaceHolderImage: placeHolder,shouldShowProgress : true)
       //  self.imageView.image(fromURL: url, andPlaceHolderImage: placeHolder,shouldShowProgress : true)
