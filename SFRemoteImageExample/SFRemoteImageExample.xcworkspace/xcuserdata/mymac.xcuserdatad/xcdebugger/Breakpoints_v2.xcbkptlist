@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "56ACAEEF-7FA9-46B6-ADA8-DF5BF8ED5CDD"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF57C90A-0DAE-437C-AEA6-DEC4BAB6FCBC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SFRemoteImageExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5BE74B5B-04E3-4B43-8C06-B3A60E0576A7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "saveFile(atDestination:withData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5BE74B5B-04E3-4B43-8C06-B3A60E0576A7 - fb2ab66c99068b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.saveFile(atDestination: Swift.String, withData: Foundation.Data) -&gt; Swift.Bool"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "5BE74B5B-04E3-4B43-8C06-B3A60E0576A7 - fb2ab66c99068b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.saveFile(atDestination: Swift.String, withData: Foundation.Data) -&gt; Swift.Bool"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "435">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "020A1EAE-F349-4385-BFAE-3CD51FDAEDFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SFRemoteImageExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E58A07FB-C76A-462C-AABB-624152F720F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getFileData(withkey:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E58A07FB-C76A-462C-AABB-624152F720F7 - a67317f12896245"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.getFileData(withkey: Swift.String) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "1642">
+               </Location>
+               <Location
+                  uuid = "E58A07FB-C76A-462C-AABB-624152F720F7 - a67317f128962a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.getFileData(withkey: Swift.String) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "351">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5819DD96-18A6-4ACB-B759-9489F9B2518C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SFRemoteImageExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFC2C866-0FA2-4820-A0DE-6068B02F6A22"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "download(url:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "126FFBCD-365E-4573-9C4D-4B61E09F633A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "download(url:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B296288E-C1D2-4884-9660-7673CE61CA9E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "getkey(fromURL:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6E01CDD-B4F8-40E7-BE58-1ADC68819E75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getFileData(withkey:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "966DC6F3-3BA0-4F19-8138-9E961B57F3E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "getFileData(withkey:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "966DC6F3-3BA0-4F19-8138-9E961B57F3E4 - 7d2eeab6254202bb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.getFileData(withkey: Swift.String) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "1793">
+               </Location>
+               <Location
+                  uuid = "966DC6F3-3BA0-4F19-8138-9E961B57F3E4 - 7d2eeab6254202fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.getFileData(withkey: Swift.String) -&gt; Swift.Optional&lt;Foundation.Data&gt;"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "1061">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23D61AA1-9BBE-430F-BA8C-DC3C6B44967A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "saveFile(atDestination:withData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "23D61AA1-9BBE-430F-BA8C-DC3C6B44967A - 8c636da5aecc2b03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.saveFile(atDestination: Swift.String, withData: Foundation.Data) -&gt; Swift.Bool"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "2750">
+               </Location>
+               <Location
+                  uuid = "23D61AA1-9BBE-430F-BA8C-DC3C6B44967A - 8c636da5aecc2bcd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SFRemoteImage.SFFileManageable.saveFile(atDestination: Swift.String, withData: Foundation.Data) -&gt; Swift.Bool"
+                  moduleName = "SFRemoteImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mymac/Desktop/OpenSource/SFRemoteImage/SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "2852">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "563DFA9B-F1F6-4534-9A23-64BDE212F596"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "saveFile(atDestination:withData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3291C6F9-D115-43C5-A740-B5BEE74BD39C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "saveFile(atDestination:withData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA8B7F65-D026-4AF6-B20F-5A6E5E83D0AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SFRemoteImage/SFRemoteImage/Source/SFRemoteImage-FileManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "saveFile(atDestination:withData:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
