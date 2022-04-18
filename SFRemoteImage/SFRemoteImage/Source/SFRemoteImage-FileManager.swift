@@ -20,6 +20,12 @@ private extension SFFileManageable {
         }
         
     }
+    var keySuit : String {
+        get
+        {
+         return "SFREMOTEIMAGESUIT"
+        }
+    }
 }
 private extension SFFileManageable {
     func createDirectoryIfNeeded(atFloder folder : String){
@@ -39,12 +45,16 @@ extension SFFileManageable  {
        createDirectoryIfNeeded(atFloder: foldername)
        guard let docDirectory = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
        else { return false }
-       let udid = UUID().uuidString
+       let key = getkey(fromURL: path)
+       let udid = key != nil ? key! : UUID().uuidString
        let fileURL = docDirectory.appendingPathComponent("\(foldername)").appendingPathComponent(udid)
        do
        {
            try data.write(to: fileURL)
-           UserDefaults.standard.setValue(udid, forKey: path)
+           let def = self.sfRemoteImageDefaults()
+           def?.setValue(udid, forKey: path)
+           def?.synchronize()
+           
        }
        catch
        {
@@ -55,11 +65,20 @@ extension SFFileManageable  {
     }
     @discardableResult func getFileData( withkey key :String)->Data? {
         if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
-            guard let keyValue = UserDefaults.standard.value(forKey: key) as? String
+            guard let keyValue = getkey(fromURL: key)
             else {return nil}
             return try?  Data.init(contentsOf: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(foldername).appendingPathComponent(keyValue).absoluteURL)
           
             }
             return nil
+    }
+    private func sfRemoteImageDefaults()->UserDefaults?{
+        let defaults = UserDefaults(suiteName: keySuit)
+        return defaults
+    }
+    private func getkey(fromURL url : String)->String? {
+    
+        let def = sfRemoteImageDefaults()
+        return def?.value(forKey: url) as? String
     }
 }
